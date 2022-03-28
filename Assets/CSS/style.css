@@ -1,0 +1,39 @@
+:root {
+    padding: auto;
+    margin: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 10%;
+}
+
+.heading {
+    margin-bottom: 70px;
+    font-size: 60px;
+}
+.p-heading {
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 30px 40px;
+}
+
+button {
+    padding: 10px 10px 10px;
+    background-color: purple;
+    border: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+}
+button:hover {
+    background-color: red;
+}
