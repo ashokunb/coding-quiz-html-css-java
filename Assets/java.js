@@ -1,11 +1,21 @@
-/*variable to select our button*/
 var buttonE1 = document.querySelector("#start-quiz");
 var sPage = document.querySelector(".start-page");
-var questionContainer = document.querySelector("#question-cont")
+var questionContainerE1 = document.querySelector("#question-cont")
+const question = document.querySelector("question")
 
-/*countown timer
+let questionCounter = 0;
+let currentQuestion;
+let availableQuestions = [];
+
+
 function startQuiz() {
-    var counter = 5
+   
+    console.log("stared")
+    buttonE1.classList.add("hide")
+    sPage.classList.add("hide")
+    questionContainerE1.classList.remove("hide")
+
+    var counter = 100
     var countdown = function() {
      console.log(counter);
         counter--;
@@ -17,32 +27,20 @@ function startQuiz() {
 
     var startcountdown = setInterval(countdown, 1000);
 
-};
-*/
-
-/*
-var StartG= function(event){
-    event.preventDefault();
-    formDiv.style.display = "none";
-}
-*/
-function startQuiz() {
-    buttonE1.classList.add("hide");
-    sPage.classList.add("hide");
-    questionContainer.classList.remove("hide");
-    NextQuestion()
 }
 
-function NextQuestion () {
-
-}
-var questions = [
-    question: 
+let questions = [
+    {
+        question: "question 1",
+        answer: "answer 2",
+        answer: "answer 3",
+        answer: "answer 4",
+        answer: "answer 5",
+    }
 ]
 
-function answer () {
 
-}
+
 
 /*holds function for when the button gets clicked*/
 buttonE1.addEventListener("click", startQuiz);
