@@ -20,23 +20,27 @@
     </header>
 
     <main class="text-center">
-        <h1 class="heading ">Coding quiz challenge</h1>
-        <!--The intro text; describing the coding quiz-->
-        <section class="p-heading">
-            <p><strong> Try to answer the follwing code-related questions within the time limit. Keep in mind that the 
-                incorrect answers will penalize your score/time by ten seconds!</strong></p>
-        </section>
-        <!--button that will start the quiz-->
-        <button>Start Quiz</button>
-
-        <section class="questions1 invisible">
-            <!-- listed questions containing the questions for the quiz.-->
-            <ol>
-                <li>question 1</li>
-                <li>question 2</li>
-                <li>question 3</li>
-                <li>question 4</li>
-            </ol>
+        <div class="start-page">
+            <h1 class="heading ">Coding quiz challenge</h1>
+            <!--The intro text; describing the coding quiz-->
+            <section class="p-heading">
+                <p><strong> Try to answer the follwing code-related questions within the time limit. Keep in mind that the 
+                    incorrect answers will penalize your score/time by ten seconds!</strong></p>
+            </section>
+            <!--button that will start the quiz-->
+            <button id="start-quiz">Start Quiz</button>
+        </div>
+        <!--section will hold question and answers-->
+        <section class="container hide" id="question-cont">
+            <div id="question-cont">
+                <section id="question">Question</section>
+                <section id="answer-btn" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </section>
+            </div>
         </section>        
     </main>
 

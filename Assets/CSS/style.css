@@ -22,7 +22,7 @@ header {
     padding: 30px 40px;
 }
 
-button {
+#start-quiz {
     padding: 10px 10px 10px;
     background-color: purple;
     border: 10px;
@@ -34,6 +34,40 @@ button {
     color: white;
     margin-top: 50px;
 }
-button:hover {
+/*our start button will change coor to red when hovered over*/
+#start-quiz:hover {
     background-color: red;
+}
+/*box conatiner to hold the question and answers*/
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+    padding: 20px;
+}
+/*arranged the ansers to be in a single grid format*/
+.btn-grid {
+    display: grid;
+    margin: 10px 0;
+}
+/*styling for the answers*/
+.btn {
+    background-color: rgb(130, 195, 211);
+    margin: 10px;
+    font-weight:bold;
+    border: 1px solid rgb(97, 146, 158);;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: white;
+    border: 2px dashed black;
+}
+.btn.wrong {
+    background-color: red;
+    color: white;
+}
+/*class of hide will be used to display and turn of items on the screen*/
+.hide {
+    display:none ;
 }
